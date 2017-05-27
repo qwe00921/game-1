@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>channels</key>
+		<array>
+			<dict>
+				<key>channel_name</key>
+				<string>AppStore</string>
+				<key>channel_id</key>
+				<string>IOSZhengShiBan</string>
+			</dict>
+			<dict>
+				<key>channel_name</key>
+				<string>AdHoc</string>
+				<key>channel_id</key>
+				<string>AdHoc</string>
+			</dict>
+			<dict>
+				<key>channel_name</key>
+				<string>PP助手</string>
+				<key>channel_id</key>
+				<string>PP</string>
+			</dict>
+			<dict>
+				<key>channel_name</key>
+				<string>同步推</string>
+				<key>channel_id</key>
+				<string>tongbut</string>
+			</dict>
+			<dict>
+				<key>channel_name</key>
+				<string>XY手机助手</string>
+				<key>channel_id</key>
+				<string>XY</string>
+			</dict>
+			<dict>
+				<key>channel_name</key>
+				<string>IOS测试</string>
+				<key>channel_id</key>
+				<string>IOSNightly</string>
+			</dict>
+		</array>
+	</dict>
+
+</plist>

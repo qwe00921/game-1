@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <enableList>
+    <item name="EnableMM" value="false" description="true 开启移动 MM 参数修改，false 不修改" />
+    <item name="EnableCopyFile" value="false" description="开启移动 MM 文件复制，false 不复制" />
+    <item name="DeleteTemp" value="false" description="自动删除Temp目录" />
+  </enableList>
+  <encryptConfig>
+    <item name="AllExts" value="eex_new;json;LM;id" description="文件所有内容加密扩展名，用;分隔" />
+    <item name="PartExts" value="bmp;e5;png;jpg" description="文件部分内容加密扩展名，用;分隔" />
+    <item name="PartLength" value="2048" description="文件部分内容加密长度" />
+  </encryptConfig>
+  <copyFileList>
+    <item name="mmiap.xml" />
+    <item name="CopyrightDeclaration.xml" />
+    <item name="VERSION" />
+  </copyFileList>
+  <resourceFileList>
+    <item name="assets/%gamedir%" />
+    <item name="assets/function.txt" />
+    <item name="assets/win32.txt" />
+    <item name="res/drawable-xxhdpi/icon.png" />
+  </resourceFileList>
+  <winPhoneFileList>
+    <item name="Assets/Resources/%gamedir%" />
+    <item name="Assets/Resources/function.txt" />
+    <item name="Assets/Tiles" />
+    <item name="Assets/ApplicationIcon.png" />
+  </winPhoneFileList>
+</config>

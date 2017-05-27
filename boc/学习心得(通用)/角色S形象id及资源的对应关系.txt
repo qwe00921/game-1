@@ -1,0 +1,10 @@
+角色S形象id及资源的对应关系：
+
+游戏的角色S形象均储存于UnitS文件夹中。
+但是哪个角色调用哪个形象则有些绕，具体表现为：
+
+1.首先查看dic_turn.json文件，如果在文件中存在某角色的hid，则该角色的S形象使用文件中对应的imgid。
+
+2.如果在dic_turn.json文件中缺少某角色的hid，则：
+	A.在dic_hero.json中确认该角色的职业jobid；
+	B.从dic_job.json中查看对应职业的imgid，该imgid就是该角色在战场中的S形象。

@@ -1,0 +1,118 @@
+﻿#ifndef _GameRes_H_
+#define _GameRes_H_
+
+enum
+{
+	SOUND_LEFT_MOUSE_CLICK = 0, //00 鼠标左键点击(选中)
+	SOUND_RIGHT_MOUSE_CLICK,  //01 鼠标右键点击(取消)      
+	SOUND_MOUSE_CLICK_ERROR, //02指令错误
+	SOUND_3,				//03
+	SOUND_BATTLE_START,		//04 战斗开始
+	SOUND_BATTLE_PREPARE_FINISH,//05 出战
+	SOUND_ACTOR_TURN,		//06 转向
+	SOUND_ATTACK,			//07 攻击一次(无目标)
+	SOUND_FAINT,			//08 晕倒 法术准备 //喘气
+	SOUND_CHANGE_ARMOR,		//09 换装备
+	SOUND_SELL,//10 卖装备 钱的声音
+	SOUND_LEVEL_UP,//11 升级
+	SOUND_OCCU_LEVEL_UP,//12 兵种升级
+	SOUND_GOOD_LEVEL_UP,//13 
+	SOUND_GET_GOOD,//14 得到物品
+	SOUND_ACTOR_APPEAR,//15 武将出现
+	SOUND_ACTOR_LEAVE_NORMAL,//16 武将撤退
+	SOUND_ACTOR_LEAVE_HIDE,//17 武将隐藏
+	SOUND_CITY_GATE_OPEN,//18 城门打开
+	SOUND_SET_FIRE,//19 放火声
+	SOUND_20,//20
+	SOUND_21,//21
+	SOUND_ACTOR_LEAVE_DEAD,//22 武将死亡
+	SOUND_INFANTRY_MOVE,//23 步兵移动
+	SOUND_CAVALRY_MOVE,//24 骑兵移动
+	SOUND_CAMION_MOVE,//25 跑车移动
+	SOUND_MOVE_ON_SNOW,//26 雪地移动
+	SOUND_MOVE_ON_GRASS,//27 草地移动
+	SOUND_MOVE_ON_FORD,//28 浅滩移动
+	SOUND_MOVE_ON_RIVER,//29 大河移动
+	SOUND_ATTACK_NO_HIT,//30 攻击一次(未击中)
+	SOUND_DEADLY_ATTACK_NO_HIT,//31 致命攻击未击中
+	SOUND_PREPARE_ATTACK,//32 除了剑之外武器得攻击准备
+	SOUND_DEADLY_PREPARE_ATTACK,//33 致命一击准备
+	SOUND_INFANTRY_ATTACK_PREPARE,//34 攻击准备
+	SOUND_ATTACK_HIT,//35 攻击一次(击中)
+	SOUND_DEAD_ATTACK_HIT,//36 致命一击(击中)
+	SOUND_ARCHER_ATTACK_PREPEAR,//37 弓兵攻击准备
+	SOUND_PK_DEAD,//38 单挑死亡
+	SOUND_SHOW_SKILL_NAME,//39 显示法术名
+	SOUND_BATTLE_FAIL,//40 战斗失败
+	SOUND_USE_GOOD,//41 使用道具
+	SOUND_ACTOR_RELIVE,//42 武将复活
+	SOUND_ACTOR_DEAD_OWN,
+	SOUND_GET_GOOD_OWN,
+	SOUND_WIND_MOVE,//45  鸟飞之声（风声）　
+	//
+	//Se_m
+	//
+	SOUND_FIRE_LEVEL_1 = 100,//100 一级火
+	SOUND_FIRE_LEVEL_2,//101 二级火
+	SOUND_WATER_LEVEL_1,//102 一级水
+	SOUND_WATER_LEVEL_2,//103 二级水
+	SOUND_WIND_LEVEL_1,//104 一级风
+	SOUND_WIND_LEVEL_2,//105 二级风
+	SOUND_SOIL_LEVEL_1,//106 一级土
+	SOUND_SOIL_LEVEL_2,//107 二级土
+	SOUND_SOIL_LEVEL_3,//108 三级土
+	SOUND_AIR_CLOUDY,//109 阴
+	SOUND_AIR_RAIN,//110 雨
+	SOUND_AIR_SUN,//111 雨->晴
+	SOUND_ZHUQUE,//112 朱雀
+	SOUND_QINGLONG,//113 青龙
+	SOUND_BAIHU,//114 白虎
+	SOUND_XUANWU,//115 玄武
+	SOUND_116,//116
+	SOUND_117,//117
+	SOUND_LIGHT,//118 雷电
+	SOUND_POISON,//119 毒焰
+	SOUND_PUZZLE,//120 混乱
+	SOUND_PALSY,//121 麻痹
+	SOUND_STUN,//122 禁咒
+	SOUND_TEMPT,//123 诱惑
+	SOUND_124,//124
+	SOUND_SUPPLY_LEVEL_1,//125 补血一级
+	SOUND_SUPPLY_LEVEL_2,//126 补血二级
+	SOUND_UNNORMAL_RECOVER_SKILL,//127 解除异常法术
+	SOUND_ENHANCE_SKILL,//128 提升状态法术
+	SOUND_STATE_DOWN,//129 异常
+	SOUND_130,//130
+	SOUND_SKILL_MISS,//131 法术miss
+	SOUND_UNNORMAL_CLEAR,//132 异常解除
+	SOUND_STATE_UP,//133 状态提升
+	SOUND_AIR_LITTLE_SUN,//134 阴转晴
+	SOUND_AIR_BIG_RAIN,//135 豪雨
+	SOUND_AIR_SNOW//136 雪
+};
+
+enum
+{
+	MUSIC_LOGO = 100,
+	MUSIC_HOME = 101, //主城、酒馆
+	MUSIC_BATTLE_SCENE = 102, //战天下、英雄志
+	MUSIC_ROMANCE = 103,//演义堂
+	MUSIC_BATTLE_WIN = 998,//战斗胜利
+	MUSIC_BATTLE_FAIL = 999//战斗失败
+};
+
+
+void playSound(int sound_id);
+void playSound_Repeat(int sound_id, int repeat);
+int ChessPlaySound(int index);
+int ChessPlayMSound(int index);
+int ChessPlayESound(int index, int loop);
+int ChessPlayQSound(int index);
+void ChessPlayMp3(int index, bool bIsScript = false);
+void ChessPlayNetSound(int index,const char* ptrName = NULL);
+void ChessStopMp3();
+
+#define    WM_DS_EVENT   WM_APP + 1
+extern int mp3_playing;
+extern int video_playing;
+#endif

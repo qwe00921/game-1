@@ -1,0 +1,4 @@
+/build
+/jniLibs
+gradle.properties
+local.properties

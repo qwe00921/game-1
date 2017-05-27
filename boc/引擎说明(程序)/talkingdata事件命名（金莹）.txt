@@ -1,0 +1,20 @@
+鼓励用户评价需求
+
+赏个好评  ——   pd_pingjia_haoping
+
+残忍拒绝 ——   pd_pingjia_jujue
+
+以后再说 ——   pd_pingjia_zaishuo
+
+-------------------
+易接
+
+新手礼包弹出   yj_newpacks_pop
+土豪礼包弹出   yj_richpacks_pop
+补给礼包弹出   yj_foodpacks_pop
+新手礼包确定   yj_newpacks_yes
+土豪礼包确定   yj_richpacks_yes
+补给礼包确定   yj_foodpacks_yes
+付费成功       yj_pay_ok
+付费失败       yj_pay_lose
+成功付费收入   yj_income_rmb

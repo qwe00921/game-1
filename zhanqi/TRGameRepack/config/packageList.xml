@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config> 
+  <packageList>
+    <package>
+      <pkgTitle>豪华曹魏传,com.bantu.hhcwz</pkgTitle>
+      <pkgName>com.bantu.hhcwz</pkgName>
+      <AppName>豪华曹魏传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+        <item name="com.baidu.lbsapi.API_KEY" value="KwHi0IS7t0FceQNZwFjFKSZr" />
+        <item name="PUSH_APPID" value="GiIdeL0FQu55o2vzmKkSA8" />
+        <item name="PUSH_APPKEY" value="7YirbkI7pT6DUb0aabjEN5" />
+        <item name="PUSH_APPSECRET" value="R029fWyTV96Yuovhf78MI1" />
+      </metaData>
+    </package>
+    
+   <package>
+      <pkgTitle>英杰传,com.shiliang.yjz</pkgTitle>
+      <pkgName>com.shiliang.yjz</pkgName>
+      <AppName>英杰传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+	    <item name="com.baidu.lbsapi.API_KEY" value="KwHi0IS7t0FceQNZwFjFKSZr" />
+      </metaData>
+   </package>
+   
+   <package>
+      <pkgTitle>江东英豪传,com.bantu.jdyhz</pkgTitle>
+      <pkgName>com.bantu.jdyhz</pkgName>
+      <AppName>江东英豪传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+	    <item name="com.baidu.lbsapi.API_KEY" value="KwHi0IS7t0FceQNZwFjFKSZr" />
+      </metaData>
+   </package>
+   
+   <package>
+      <pkgTitle>曹操传威力加强版,com.bantu.cczwl</pkgTitle>
+      <pkgName>com.bantu.cczwl</pkgName>
+      <AppName>曹操传威力加强版</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+	    <item name="com.baidu.lbsapi.API_KEY" value="1QyWmn7I8lFSMrPy7GuQ7l6w" />
+      </metaData>
+   </package>
+	
+   <package>
+      <pkgTitle>东吴霸王传,com.bantu.dwbwz</pkgTitle>
+      <pkgName>com.bantu.dwbwz</pkgName>
+      <AppName>东吴霸王传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+	    <item name="com.baidu.lbsapi.API_KEY" value="B3vv6j49U7TQHuF27SQ2eb8g" />
+      </metaData>
+    </package>
+
+    <package>
+      <pkgTitle>豪华曹操传,com.bantu.hhccz</pkgTitle>
+      <pkgName>com.bantu.hhccz</pkgName>
+      <AppName>豪华曹操传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+	    <item name="com.baidu.lbsapi.API_KEY" value="r5OKT6jIe8xIZLfiM386XCcF" />
+      </metaData>
+    </package>
+	
+    <package>
+      <pkgTitle>新水浒宋江传,com.bantu.sjz</pkgTitle>
+      <pkgName>com.bantu.sjz</pkgName>
+      <AppName>新水浒宋江传</AppName>
+      <ResourceDelete>assets\cwz;assets\sjz</ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+	    <item name="com.baidu.lbsapi.API_KEY" value="Gw2ZXxMFhKfeUSkNVGzUDjLM" />
+      </metaData>
+    </package>
+	
+    <package>
+      <pkgTitle>蜀汉传卧龙篇,com.bantu.shzwlp</pkgTitle>
+      <pkgName>com.bantu.shzwlp</pkgName>
+      <AppName>蜀汉传卧龙篇</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{865c0510-0e93-4162-9763-317f6857a2c5}</WinPhoneProductID>
+      <WinPhoneDescription>蜀汉传卧龙篇</WinPhoneDescription>
+      <metaData>
+        <item name="com.baidu.lbsapi.API_KEY" value="Dfz9o3xV8lyGW52bynTSvacD" />
+      </metaData>
+    </package>
+	
+	<package>
+      <pkgTitle>幻想版赵云传,com.bantu.hxbzyz</pkgTitle>
+      <pkgName>com.bantu.hxbzyz</pkgName>
+      <AppName>幻想版赵云传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{865c0510-0e93-4162-9763-317f6857a2c5}</WinPhoneProductID>
+      <WinPhoneDescription>幻想版赵云传</WinPhoneDescription>
+      <metaData>
+        <item name="com.baidu.lbsapi.API_KEY" value="nxFRI01CEPlNYYdr2GvypHWg" />
+      </metaData>
+    </package>  
+	
+	<package>
+      <pkgTitle>精忠报国岳飞传,com.bantu.yfz</pkgTitle>
+      <pkgName>com.bantu.yfz</pkgName>
+      <AppName>精忠报国岳飞传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{76a2b4da-c135-44b9-9093-beab9ce39799}</WinPhoneProductID>
+      <WinPhoneDescription>东汉末年，诸侯四起。北有枭雄曹操。南有霸王孙策。就是这么一个战乱不休的年代，却孕育了不朽的传奇。玩家将扮演刘备进入群雄相争的年代。等待玩家的将是什么？驰骋疆场？诡道兵法？还是阴谋权术？ 欢迎下载游戏，挥洒豪情壮志！&#xD;&#xA;圣三国蜀汉传原名《圣三国志英杰传》当年红极一时，是一款考验玩家策略的经典三国题材战棋游戏。</WinPhoneDescription>
+      <metaData>
+	    <item name="com.baidu.lbsapi.API_KEY" value="kVmLlM0ypyBKig47HAPIVg5g" />
+      </metaData>
+    </package>
+    
+	<package>
+      <pkgTitle>英杰传正式版整包,com.bantu.ssgzyjz</pkgTitle>
+      <pkgName>com.bantu.ssgzyjz</pkgName>
+      <AppName>圣三国蜀汉传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{76a2b4da-c135-44b9-9093-beab9ce39799}</WinPhoneProductID>
+      <WinPhoneDescription>东汉末年，诸侯四起。北有枭雄曹操。南有霸王孙策。就是这么一个战乱不休的年代，却孕育了不朽的传奇。玩家将扮演刘备进入群雄相争的年代。等待玩家的将是什么？驰骋疆场？诡道兵法？还是阴谋权术？ 欢迎下载游戏，挥洒豪情壮志！&#xD;&#xA;圣三国蜀汉传原名《圣三国志英杰传》当年红极一时，是一款考验玩家策略的经典三国题材战棋游戏。</WinPhoneDescription>
+      <metaData>
+        <item name="com.baidu.lbsapi.API_KEY" value="xqZdbKbNIVIYmE9dLmxlRGx1" />
+      </metaData>
+    </package>
+    
+    <package>
+      <pkgTitle>封神英杰传正式版整包,com.bantu.fsyjz</pkgTitle>
+      <pkgName>com.bantu.fsyjz</pkgName>
+      <AppName>封神英杰传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+        <item name="com.baidu.lbsapi.API_KEY" value="{87C54DBB-7F67D645}" />
+      </metaData>
+    </package>   
+ 
+    <package>
+      <pkgTitle>圣三国魏传正式版整包,com.bantu.ssgwz</pkgTitle>
+      <pkgName>com.bantu.ssgwz</pkgName>
+      <AppName>圣三国魏传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+        <item name="com.baidu.lbsapi.API_KEY" value="TYwDZ7pm9EkafVnTWq7G4WYV" />
+      </metaData>
+    </package> 
+
+    <package>
+      <pkgTitle>三国志赵云传,com.bantu.zyz</pkgTitle>
+      <pkgName>com.bantu.zyz</pkgName>
+      <AppName>三国志赵云传</AppName>
+      <ResourceDelete></ResourceDelete>
+      <ResourceEncrypt></ResourceEncrypt>
+      <ResourceNormal></ResourceNormal>
+      <WinPhoneProductID>{865c0510-0e93-4162-9763-317f6857a2c5}</WinPhoneProductID>
+      <WinPhoneDescription>三国志赵云传描述</WinPhoneDescription>
+      <metaData>
+        <item name="com.baidu.lbsapi.API_KEY" value="FR7C4SvBfzl97RhPO8zUhXzU" />
+      </metaData>
+    </package>    
+
+    <package>
+      <pkgTitle>杨家将正式版整包,com.bantu.yjj</pkgTitle>
+      <pkgName>com.bantu.yjj</pkgName>
+      <AppName>杨家将传奇</AppName>
+      <ResourceDelete>assets\caocaos;assets\dwz</ResourceDelete>
+      <ResourceEncrypt>E:\工具\trgame\杨家将\正式发布资源</ResourceEncrypt>
+      <ResourceNormal>E:\工具\trgame\杨家将\Android不加密覆盖资源</ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+	    <item name="com.baidu.lbsapi.API_KEY" value="a9YkTMyZmP4PmRoUpf23yHcN" />
+      </metaData>
+    </package>    
+
+    <package>
+      <pkgTitle>东吴传正式版整包,com.bantu.dwz</pkgTitle>
+      <pkgName>com.bantu.dwz</pkgName>
+      <AppName>东吴传</AppName>
+      <ResourceDelete>assets\caocaos;assets\dwz</ResourceDelete>
+      <ResourceEncrypt>E:\工具\trgame\东吴传\正式发布资源</ResourceEncrypt>
+      <ResourceNormal>E:\工具\trgame\东吴传\Android不加密覆盖资源</ResourceNormal>
+      <WinPhoneProductID>{00000000-0000-0000-0000-000000000000}</WinPhoneProductID>
+      <WinPhoneDescription>描述</WinPhoneDescription>
+      <metaData>
+        <item name="com.baidu.lbsapi.API_KEY" value="AKqb0oVcqcCECUmVlS8hPGmb" />	  
+      </metaData>
+    </package>
+  </packageList>
+</config>

@@ -1,0 +1,257 @@
+apply plugin: 'com.android.application'
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
+def String getCurrentFlavor() {
+    Gradle gradle = getGradle()
+    String tskReqStr = gradle.getStartParameter().getTaskRequests().toString()
+
+    Pattern pattern;
+
+    if (tskReqStr.contains("assemble"))
+        pattern = Pattern.compile("assemble(\\w+)(Release|Debug)")
+    else
+        pattern = Pattern.compile("generate(\\w+)(Release|Debug)")
+
+    Matcher matcher = pattern.matcher(tskReqStr)
+
+    if (matcher.find())
+        return matcher.group(1).toLowerCase()
+    else {
+        println "NO MATCH FOUND"
+        return "";
+    }
+}
+
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "25.0.0"
+    publishNonDefault  true
+    defaultConfig {
+        applicationId "com.bantu.zqtxmini"
+        minSdkVersion 10
+        targetSdkVersion 22
+        ndk {
+            moduleName "libMyGame"         //生成的so名字
+            abiFilters "armeabi-v7a"  //输出指定三种abi体系结构下的so库。
+        }
+
+    }
+
+
+    buildTypes {
+        debug {
+            jniDebuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            if (project.hasProperty("RELEASE_STORE_FILE")) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError true
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            assets.srcDirs = ['src/main/assets']
+            res.srcDirs = ['src/main/res']
+            jniLibs.srcDirs = ['libs']
+        }
+        uc {
+            java.srcDirs = ['src/uc/java']
+            assets.srcDirs = ['src/uc/assets']
+            res.srcDirs = ['src/uc/res']
+            jniLibs.srcDirs = ['libs']
+        }
+        amigo {
+            java.srcDirs = ['src/amigo/java']
+            assets.srcDirs = ['src/amigo/assets']
+            res.srcDirs = ['src/amigo/res']
+            jniLibs.srcDirs = ['libs']
+        }
+        qihoo{
+            java.srcDirs = ['src/qihoo/java']
+            assets.srcDirs = ['src/qihoo/assets']
+            res.srcDirs = ['src/qihoo/res']
+            jniLibs.srcDirs = ['libs']
+        }
+        mi{
+            java.srcDirs = ['src/mi/java']
+            assets.srcDirs = ['src/mi/assets']
+            res.srcDirs = ['src/mi/res']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        vivo{
+            java.srcDirs = ['src/vivo/java']
+            assets.srcDirs = ['src/vivo/assets']
+            res.srcDirs = ['src/vivo/res']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        oppo{
+            java.srcDirs = ['src/oppo/java']
+            assets.srcDirs = ['src/oppo/assets']
+            res.srcDirs = ['src/oppo/res']
+            jniLibs.srcDirs = ['libs']
+        }
+        huawei{
+            java.srcDirs = ['src/huawei/java']
+            assets.srcDirs = ['src/huawei/assets']
+            res.srcDirs = ['src/huawei/res']
+            jniLibs.srcDirs = ['libs']
+        }
+        baidu{
+            java.srcDirs = ['src/baidu/java']
+            assets.srcDirs = ['src/baidu/assets']
+            res.srcDirs = ['src/baidu/res']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    productFlavors {
+        uc {
+            applicationId "com.bantu.zqtx.aligames"
+            versionCode 5
+            versionName '1.0.2'
+        }
+        amigo {
+            applicationId 'com.bantu.zqtx.am'
+            versionCode 5
+            versionName '1.0.2'
+        }
+        qihoo {
+            applicationId 'com.bantu.zqtx.qihoo'
+            versionCode 5
+            versionName '1.0.2'
+            targetSdkVersion 17
+        }
+        mi {
+            applicationId 'com.bantu.zqtx.mi'
+            versionCode 5
+            versionName '1.0.2'
+        }
+
+        vivo {
+            applicationId 'com.bantu.zqtx.vivo'
+            versionCode 5
+            versionName '1.0.2'
+        }
+        oppo {
+            applicationId 'com.bantu.zqtx.nearme.gamecenter'
+            versionCode 5
+            versionName '1.0.2'
+        }
+        huawei {
+            applicationId 'com.bantu.zqtx.huawei'
+            versionCode 5
+            versionName '1.0.2'
+        }
+        baidu {
+            applicationId 'com.bantu.zqtx.baidu'
+            versionCode 5
+            versionName '1.0.2'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    def flavorType= getCurrentFlavor();
+
+    if (flavorType == "qihoo"){
+        compile fileTree(dir: 'libs', include: ['*.jar'], exclude: ['android-support-v13.jar','libammsdk.jar'])
+    }else if (flavorType == "vivo"){
+        compile fileTree(dir: 'libs', include: ['*.jar'], exclude: ['android-support-v13.jar'])
+    }else if (flavorType == "huawei"){
+        compile fileTree(dir: 'libs', include: ['*.jar'], exclude: ['android-support-v13.jar'])
+    }
+    else{
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+    }
+
+    compile fileTree(dir: 'libs/lebian', include: ['*.jar'])
+    miCompile fileTree(dir: 'libs/mi', include: ['*.jar'])
+    huaweiCompile fileTree(dir: 'libs/huawei', include: ['*.jar'])
+    qihooCompile fileTree(dir: 'libs/qihoo', include: ['*.jar'])
+    amigoCompile fileTree(dir: 'libs/amigo', include: ['*.jar'])
+    vivoCompile fileTree(dir: 'libs/vivo', include: ['*.jar'])
+    baiduCompile fileTree(dir: 'libs/baidu', include: ['*.jar'])
+    oppoCompile fileTree(dir: 'libs/oppo', include: ['*.jar'])
+//    amigoCompile fileTree(dir: 'libs', include: ['*.jar'])
+//    ucCompile fileTree(dir: 'libs', include: ['*.jar'], exclude: ['com.gionee.gsp.jar'//am
+//                                                                  ,'360SDK.jar','android-support-v4.jar'//360
+//    ])
+//    qihooCompile fileTree(dir: 'libs', include: ['*.jar'], exclude: ['com.gionee.gsp.jar',//am
+//            'mta-sdk-1.6.2.jar',
+//            'libammsdk.jar',
+//                                                                    'open_sdk_r5509.jar',
+//                                                                     'alipaysdk.jar','android-support-v13.jar'])
+
+
+    //compile project(':libcocos2dx')
+    //    fileTree(dir: 'libs', include: ['*.aar']).each { file ->
+    //        compile(name: file.name.lastIndexOf('.').with {
+    //            it != -1 ? file.name[0..<it] : file.name
+    //        }, ext: 'aar')
+    //    }
+    ucCompile(name: 'ucsdk-7.1.3', ext: 'aar')
+
+//    debugCompile project(path: ':libMyGame', configuration: 'debug')
+//    releaseCompile project(path: ':libMyGame', configuration: 'release')
+    debugCompile project(path: ':libcocos2dx', configuration: 'debug')
+    releaseCompile project(path: ':libcocos2dx', configuration: 'release')
+}
+
+task cleanAssets(type: Delete) {
+    def flavorType= getCurrentFlavor();
+    println(flavorType);
+    delete 'src/'+ flavorType + '/assets'
+    delete 'build/intermediates/assets'
+}
+
+task copyAssets(type: Copy) {
+    def flavorType= getCurrentFlavor();
+    println(flavorType);
+    from '../../Resources'
+    from '../../gradleCfg/'+flavorType
+    into 'src/'+flavorType+'/assets'
+    exclude '**/login.dat'
+    exclude 'win32.txt'
+}
+
+task copyClasses(type: Copy) {
+    def flavorType= getCurrentFlavor();
+    println(flavorType);
+    from '../../gradleClasses/'+flavorType
+    into 'src/main/java'
+}
+
+task copySo(type: Copy) {
+    def flavorType= getCurrentFlavor();
+    println(flavorType);
+    from '../../gradleSo/armeabi-v7a/'+flavorType
+    into 'libs/armeabi-v7a/'
+}
+
+clean.dependsOn cleanAssets
+
+preBuild.dependsOn copyAssets
+preBuild.dependsOn copyClasses
+preBuild.dependsOn copySo

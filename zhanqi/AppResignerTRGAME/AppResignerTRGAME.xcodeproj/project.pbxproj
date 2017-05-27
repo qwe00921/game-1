@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1825911D1A8A07CE00A6F99C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825911C1A8A07CE00A6F99C /* AppDelegate.swift */; };
+		1825911F1A8A07CE00A6F99C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825911E1A8A07CE00A6F99C /* ViewController.swift */; };
+		182591211A8A07CE00A6F99C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182591201A8A07CE00A6F99C /* Images.xcassets */; };
+		182591241A8A07CE00A6F99C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182591221A8A07CE00A6F99C /* Main.storyboard */; };
+		1861FD011A8AF5C600100AB7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861FD001A8AF5C600100AB7 /* TableViewController.swift */; };
+		9830C0651AA19F360037A392 /* unpackipa.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9830C0641AA19F360037A392 /* unpackipa.sh */; };
+		9830C0691AA1ABD50037A392 /* channels_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9830C0681AA1ABD50037A392 /* channels_config.plist */; };
+		9830C06D1AA1ABFF0037A392 /* games_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9830C06A1AA1ABFF0037A392 /* games_config.plist */; };
+		9830C06F1AA1ABFF0037A392 /* XC.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 9830C06C1AA1ABFF0037A392 /* XC.mobileprovision */; };
+		9830C0711AA1AE040037A392 /* FileUtlis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830C0701AA1AE040037A392 /* FileUtlis.swift */; };
+		9830C0741AA3558B0037A392 /* repackipa.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9830C0731AA3472E0037A392 /* repackipa.sh */; };
+		984874C31AA5B45D001C3599 /* archived-expanded-entitlements.xcent in Resources */ = {isa = PBXBuildFile; fileRef = 984874C21AA5B45D001C3599 /* archived-expanded-entitlements.xcent */; };
+		9850C5C51AA5686A0017F31C /* entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 9850C5C41AA5686A0017F31C /* entitlements */; };
+		9850C5C71AA56C7D0017F31C /* XC_adhoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 9850C5C61AA56C7D0017F31C /* XC_adhoc.mobileprovision */; };
+		98530D8E1AC4408900DC38BC /* ShengSanGuo_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 98530D8A1AC4408900DC38BC /* ShengSanGuo_AdHoc.mobileprovision */; };
+		98530D8F1AC4408900DC38BC /* ZhaoYunZhuan_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 98530D8B1AC4408900DC38BC /* ZhaoYunZhuan_AdHoc.mobileprovision */; };
+		98530D901AC4408900DC38BC /* ShengSanGuo_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 98530D8C1AC4408900DC38BC /* ShengSanGuo_AppStore.mobileprovision */; };
+		98530D911AC4408900DC38BC /* ZhaoYunZhuan_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 98530D8D1AC4408900DC38BC /* ZhaoYunZhuan_AppStore.mobileprovision */; };
+		987372B31AA091700015D788 /* ChannelListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987372B21AA091700015D788 /* ChannelListTableViewCell.swift */; };
+		9896F2561ACC03F900255189 /* entitlements_adhoc in Resources */ = {isa = PBXBuildFile; fileRef = 9896F2551ACC03F900255189 /* entitlements_adhoc */; };
+		F51AAACC1B6F091F00FA0A57 /* SSGSHZFTB_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F51AAACA1B6F091F00FA0A57 /* SSGSHZFTB_AdHoc.mobileprovision */; };
+		F51AAACD1B6F091F00FA0A57 /* SSGSHZFTB_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F51AAACB1B6F091F00FA0A57 /* SSGSHZFTB_AppStore.mobileprovision */; };
+		F531B71B1BD5DCAF005B801E /* games_config_haima.plist in Resources */ = {isa = PBXBuildFile; fileRef = F531B71A1BD5DCAF005B801E /* games_config_haima.plist */; };
+		F56259C91B20292E00457C8A /* YueFeiZhuan_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F56259C71B20292E00457C8A /* YueFeiZhuan_AdHoc.mobileprovision */; };
+		F56259CA1B20292E00457C8A /* YueFeiZhuan_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F56259C81B20292E00457C8A /* YueFeiZhuan_AppStore.mobileprovision */; };
+		F59D190A1B83087100B0DEBE /* SHZWLP_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F59D19081B83087100B0DEBE /* SHZWLP_AdHoc.mobileprovision */; };
+		F59D190B1B83087100B0DEBE /* SHZWLP_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F59D19091B83087100B0DEBE /* SHZWLP_AppStore.mobileprovision */; };
+		F5AD9AA71B0DC871006E1EC7 /* HuanXiangBanZhaoYunZhuan_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F5AD9AA51B0DC871006E1EC7 /* HuanXiangBanZhaoYunZhuan_AdHoc.mobileprovision */; };
+		F5AD9AA81B0DC871006E1EC7 /* HuanXiangBanZhaoYunZhuan_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F5AD9AA61B0DC871006E1EC7 /* HuanXiangBanZhaoYunZhuan_AppStore.mobileprovision */; };
+		F5BD93C61BD620F2006EF251 /* DWBWZ_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F5BD93C41BD620F2006EF251 /* DWBWZ_AdHoc.mobileprovision */; };
+		F5BD93C71BD620F2006EF251 /* DWBWZ_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F5BD93C51BD620F2006EF251 /* DWBWZ_AppStore.mobileprovision */; };
+		F5BD93CA1BD62109006EF251 /* HHCCZ_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F5BD93C81BD62109006EF251 /* HHCCZ_AdHoc.mobileprovision */; };
+		F5BD93CB1BD62109006EF251 /* HHCCZ_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F5BD93C91BD62109006EF251 /* HHCCZ_AppStore.mobileprovision */; };
+		F5C1D3131B031FCA00AFA2E5 /* ShengSanGuoWeiZhuan_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F5C1D3111B031FCA00AFA2E5 /* ShengSanGuoWeiZhuan_AdHoc.mobileprovision */; };
+		F5C1D3141B031FCA00AFA2E5 /* ShengSanGuoWeiZhuan_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = F5C1D3121B031FCA00AFA2E5 /* ShengSanGuoWeiZhuan_AppStore.mobileprovision */; };
+		FD8780151AC95745006A6430 /* CaoCaoZhuan_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FD8780051AC95745006A6430 /* CaoCaoZhuan_AdHoc.mobileprovision */; };
+		FD8780161AC95745006A6430 /* CaoCaoZhuan_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FD8780061AC95745006A6430 /* CaoCaoZhuan_AppStore.mobileprovision */; };
+		FD8780191AC95745006A6430 /* CaoCaoZhuanWL_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FD8780091AC95745006A6430 /* CaoCaoZhuanWL_AdHoc.mobileprovision */; };
+		FD87801A1AC95745006A6430 /* CaoCaoZhuanWL_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FD87800A1AC95745006A6430 /* CaoCaoZhuanWL_AppStore.mobileprovision */; };
+		FD87801D1AC95745006A6430 /* DongWuZhuan_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FD87800D1AC95745006A6430 /* DongWuZhuan_AdHoc.mobileprovision */; };
+		FD87801E1AC95745006A6430 /* DongWuZhuan_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FD87800E1AC95745006A6430 /* DongWuZhuan_AppStore.mobileprovision */; };
+		FD8780211AC95745006A6430 /* YangJiaJiang_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FD8780111AC95745006A6430 /* YangJiaJiang_AdHoc.mobileprovision */; };
+		FD8780221AC95745006A6430 /* YangJiaJiang_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FD8780121AC95745006A6430 /* YangJiaJiang_AppStore.mobileprovision */; };
+		FDC3A0F61AEA541100777FE1 /* SongJiangZhuan_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FDC3A0F41AEA541100777FE1 /* SongJiangZhuan_AdHoc.mobileprovision */; };
+		FDC3A0F71AEA541100777FE1 /* SongJiangZhuan_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FDC3A0F51AEA541100777FE1 /* SongJiangZhuan_AppStore.mobileprovision */; };
+		FDD26A6C1ADF7CF9005EDD82 /* FengShenYingJieZhuan_AdHoc.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FDD26A6A1ADF7CF9005EDD82 /* FengShenYingJieZhuan_AdHoc.mobileprovision */; };
+		FDD26A6D1ADF7CF9005EDD82 /* FengShenYingJieZhuan_AppStore.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = FDD26A6B1ADF7CF9005EDD82 /* FengShenYingJieZhuan_AppStore.mobileprovision */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		182591171A8A07CD00A6F99C /* IOS打包工具.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS打包工具.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1825911B1A8A07CE00A6F99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1825911C1A8A07CE00A6F99C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1825911E1A8A07CE00A6F99C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		182591201A8A07CE00A6F99C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		182591231A8A07CE00A6F99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1825912E1A8A07CE00A6F99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1825912F1A8A07CE00A6F99C /* AppResignerTRGAMETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResignerTRGAMETests.swift; sourceTree = "<group>"; };
+		1861FD001A8AF5C600100AB7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9830C0641AA19F360037A392 /* unpackipa.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = unpackipa.sh; sourceTree = "<group>"; };
+		9830C0681AA1ABD50037A392 /* channels_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = channels_config.plist; sourceTree = "<group>"; };
+		9830C06A1AA1ABFF0037A392 /* games_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = games_config.plist; sourceTree = "<group>"; };
+		9830C06C1AA1ABFF0037A392 /* XC.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = XC.mobileprovision; sourceTree = "<group>"; };
+		9830C0701AA1AE040037A392 /* FileUtlis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtlis.swift; sourceTree = "<group>"; };
+		9830C0731AA3472E0037A392 /* repackipa.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = repackipa.sh; sourceTree = "<group>"; };
+		984874C21AA5B45D001C3599 /* archived-expanded-entitlements.xcent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "archived-expanded-entitlements.xcent"; sourceTree = "<group>"; };
+		9850C5C41AA5686A0017F31C /* entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = entitlements; sourceTree = "<group>"; };
+		9850C5C61AA56C7D0017F31C /* XC_adhoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = XC_adhoc.mobileprovision; sourceTree = "<group>"; };
+		98530D8A1AC4408900DC38BC /* ShengSanGuo_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShengSanGuo_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		98530D8B1AC4408900DC38BC /* ZhaoYunZhuan_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZhaoYunZhuan_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		98530D8C1AC4408900DC38BC /* ShengSanGuo_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShengSanGuo_AppStore.mobileprovision; sourceTree = "<group>"; };
+		98530D8D1AC4408900DC38BC /* ZhaoYunZhuan_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZhaoYunZhuan_AppStore.mobileprovision; sourceTree = "<group>"; };
+		987372B21AA091700015D788 /* ChannelListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListTableViewCell.swift; sourceTree = "<group>"; };
+		9896F2551ACC03F900255189 /* entitlements_adhoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = entitlements_adhoc; sourceTree = "<group>"; };
+		F51AAACA1B6F091F00FA0A57 /* SSGSHZFTB_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = SSGSHZFTB_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		F51AAACB1B6F091F00FA0A57 /* SSGSHZFTB_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = SSGSHZFTB_AppStore.mobileprovision; sourceTree = "<group>"; };
+		F531B71A1BD5DCAF005B801E /* games_config_haima.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = games_config_haima.plist; sourceTree = "<group>"; };
+		F56259C71B20292E00457C8A /* YueFeiZhuan_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = YueFeiZhuan_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		F56259C81B20292E00457C8A /* YueFeiZhuan_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = YueFeiZhuan_AppStore.mobileprovision; sourceTree = "<group>"; };
+		F59D19081B83087100B0DEBE /* SHZWLP_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = SHZWLP_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		F59D19091B83087100B0DEBE /* SHZWLP_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = SHZWLP_AppStore.mobileprovision; sourceTree = "<group>"; };
+		F5AD9AA51B0DC871006E1EC7 /* HuanXiangBanZhaoYunZhuan_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = HuanXiangBanZhaoYunZhuan_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		F5AD9AA61B0DC871006E1EC7 /* HuanXiangBanZhaoYunZhuan_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = HuanXiangBanZhaoYunZhuan_AppStore.mobileprovision; sourceTree = "<group>"; };
+		F5BD93C41BD620F2006EF251 /* DWBWZ_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = DWBWZ_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		F5BD93C51BD620F2006EF251 /* DWBWZ_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = DWBWZ_AppStore.mobileprovision; sourceTree = "<group>"; };
+		F5BD93C81BD62109006EF251 /* HHCCZ_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = HHCCZ_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		F5BD93C91BD62109006EF251 /* HHCCZ_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = HHCCZ_AppStore.mobileprovision; sourceTree = "<group>"; };
+		F5C1D3111B031FCA00AFA2E5 /* ShengSanGuoWeiZhuan_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShengSanGuoWeiZhuan_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		F5C1D3121B031FCA00AFA2E5 /* ShengSanGuoWeiZhuan_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShengSanGuoWeiZhuan_AppStore.mobileprovision; sourceTree = "<group>"; };
+		FD8780051AC95745006A6430 /* CaoCaoZhuan_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaoCaoZhuan_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		FD8780061AC95745006A6430 /* CaoCaoZhuan_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaoCaoZhuan_AppStore.mobileprovision; sourceTree = "<group>"; };
+		FD8780091AC95745006A6430 /* CaoCaoZhuanWL_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaoCaoZhuanWL_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		FD87800A1AC95745006A6430 /* CaoCaoZhuanWL_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaoCaoZhuanWL_AppStore.mobileprovision; sourceTree = "<group>"; };
+		FD87800D1AC95745006A6430 /* DongWuZhuan_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = DongWuZhuan_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		FD87800E1AC95745006A6430 /* DongWuZhuan_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = DongWuZhuan_AppStore.mobileprovision; sourceTree = "<group>"; };
+		FD8780111AC95745006A6430 /* YangJiaJiang_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = YangJiaJiang_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		FD8780121AC95745006A6430 /* YangJiaJiang_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = YangJiaJiang_AppStore.mobileprovision; sourceTree = "<group>"; };
+		FDC3A0F41AEA541100777FE1 /* SongJiangZhuan_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = SongJiangZhuan_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		FDC3A0F51AEA541100777FE1 /* SongJiangZhuan_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = SongJiangZhuan_AppStore.mobileprovision; sourceTree = "<group>"; };
+		FDD26A6A1ADF7CF9005EDD82 /* FengShenYingJieZhuan_AdHoc.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = FengShenYingJieZhuan_AdHoc.mobileprovision; sourceTree = "<group>"; };
+		FDD26A6B1ADF7CF9005EDD82 /* FengShenYingJieZhuan_AppStore.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = FengShenYingJieZhuan_AppStore.mobileprovision; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		182591141A8A07CD00A6F99C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1825910E1A8A07CD00A6F99C = {
+			isa = PBXGroup;
+			children = (
+				182591191A8A07CD00A6F99C /* AppResignerTRGAME */,
+				1825912C1A8A07CE00A6F99C /* AppResignerTRGAMETests */,
+				182591181A8A07CD00A6F99C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		182591181A8A07CD00A6F99C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				182591171A8A07CD00A6F99C /* IOS打包工具.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		182591191A8A07CD00A6F99C /* AppResignerTRGAME */ = {
+			isa = PBXGroup;
+			children = (
+				1825911C1A8A07CE00A6F99C /* AppDelegate.swift */,
+				1825911E1A8A07CE00A6F99C /* ViewController.swift */,
+				1861FD001A8AF5C600100AB7 /* TableViewController.swift */,
+				9830C0701AA1AE040037A392 /* FileUtlis.swift */,
+				987372B21AA091700015D788 /* ChannelListTableViewCell.swift */,
+				182591221A8A07CE00A6F99C /* Main.storyboard */,
+				182591201A8A07CE00A6F99C /* Images.xcassets */,
+				1825911A1A8A07CE00A6F99C /* Supporting Files */,
+			);
+			path = AppResignerTRGAME;
+			sourceTree = "<group>";
+		};
+		1825911A1A8A07CE00A6F99C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5BD93C81BD62109006EF251 /* HHCCZ_AdHoc.mobileprovision */,
+				F5BD93C91BD62109006EF251 /* HHCCZ_AppStore.mobileprovision */,
+				F5BD93C41BD620F2006EF251 /* DWBWZ_AdHoc.mobileprovision */,
+				F5BD93C51BD620F2006EF251 /* DWBWZ_AppStore.mobileprovision */,
+				F531B71A1BD5DCAF005B801E /* games_config_haima.plist */,
+				F59D19081B83087100B0DEBE /* SHZWLP_AdHoc.mobileprovision */,
+				F59D19091B83087100B0DEBE /* SHZWLP_AppStore.mobileprovision */,
+				F51AAACA1B6F091F00FA0A57 /* SSGSHZFTB_AdHoc.mobileprovision */,
+				F51AAACB1B6F091F00FA0A57 /* SSGSHZFTB_AppStore.mobileprovision */,
+				F56259C71B20292E00457C8A /* YueFeiZhuan_AdHoc.mobileprovision */,
+				F56259C81B20292E00457C8A /* YueFeiZhuan_AppStore.mobileprovision */,
+				F5AD9AA51B0DC871006E1EC7 /* HuanXiangBanZhaoYunZhuan_AdHoc.mobileprovision */,
+				F5AD9AA61B0DC871006E1EC7 /* HuanXiangBanZhaoYunZhuan_AppStore.mobileprovision */,
+				F5C1D3111B031FCA00AFA2E5 /* ShengSanGuoWeiZhuan_AdHoc.mobileprovision */,
+				F5C1D3121B031FCA00AFA2E5 /* ShengSanGuoWeiZhuan_AppStore.mobileprovision */,
+				FDC3A0F41AEA541100777FE1 /* SongJiangZhuan_AdHoc.mobileprovision */,
+				FDC3A0F51AEA541100777FE1 /* SongJiangZhuan_AppStore.mobileprovision */,
+				FDD26A6A1ADF7CF9005EDD82 /* FengShenYingJieZhuan_AdHoc.mobileprovision */,
+				FDD26A6B1ADF7CF9005EDD82 /* FengShenYingJieZhuan_AppStore.mobileprovision */,
+				FD8780051AC95745006A6430 /* CaoCaoZhuan_AdHoc.mobileprovision */,
+				FD8780061AC95745006A6430 /* CaoCaoZhuan_AppStore.mobileprovision */,
+				FD8780091AC95745006A6430 /* CaoCaoZhuanWL_AdHoc.mobileprovision */,
+				FD87800A1AC95745006A6430 /* CaoCaoZhuanWL_AppStore.mobileprovision */,
+				FD87800D1AC95745006A6430 /* DongWuZhuan_AdHoc.mobileprovision */,
+				FD87800E1AC95745006A6430 /* DongWuZhuan_AppStore.mobileprovision */,
+				FD8780111AC95745006A6430 /* YangJiaJiang_AdHoc.mobileprovision */,
+				FD8780121AC95745006A6430 /* YangJiaJiang_AppStore.mobileprovision */,
+				98530D8A1AC4408900DC38BC /* ShengSanGuo_AdHoc.mobileprovision */,
+				98530D8B1AC4408900DC38BC /* ZhaoYunZhuan_AdHoc.mobileprovision */,
+				98530D8C1AC4408900DC38BC /* ShengSanGuo_AppStore.mobileprovision */,
+				98530D8D1AC4408900DC38BC /* ZhaoYunZhuan_AppStore.mobileprovision */,
+				984874C21AA5B45D001C3599 /* archived-expanded-entitlements.xcent */,
+				9850C5C41AA5686A0017F31C /* entitlements */,
+				9896F2551ACC03F900255189 /* entitlements_adhoc */,
+				9850C5C61AA56C7D0017F31C /* XC_adhoc.mobileprovision */,
+				9830C06C1AA1ABFF0037A392 /* XC.mobileprovision */,
+				9830C06A1AA1ABFF0037A392 /* games_config.plist */,
+				9830C0681AA1ABD50037A392 /* channels_config.plist */,
+				1825911B1A8A07CE00A6F99C /* Info.plist */,
+				9830C0641AA19F360037A392 /* unpackipa.sh */,
+				9830C0731AA3472E0037A392 /* repackipa.sh */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1825912C1A8A07CE00A6F99C /* AppResignerTRGAMETests */ = {
+			isa = PBXGroup;
+			children = (
+				1825912F1A8A07CE00A6F99C /* AppResignerTRGAMETests.swift */,
+				1825912D1A8A07CE00A6F99C /* Supporting Files */,
+			);
+			path = AppResignerTRGAMETests;
+			sourceTree = "<group>";
+		};
+		1825912D1A8A07CE00A6F99C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1825912E1A8A07CE00A6F99C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		182591161A8A07CD00A6F99C /* AppResignerTRGAME */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182591331A8A07CE00A6F99C /* Build configuration list for PBXNativeTarget "AppResignerTRGAME" */;
+			buildPhases = (
+				182591131A8A07CD00A6F99C /* Sources */,
+				182591141A8A07CD00A6F99C /* Frameworks */,
+				182591151A8A07CD00A6F99C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppResignerTRGAME;
+			productName = AppResignerTRGAME;
+			productReference = 182591171A8A07CD00A6F99C /* IOS打包工具.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1825910F1A8A07CD00A6F99C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = shenliming;
+				TargetAttributes = {
+					182591161A8A07CD00A6F99C = {
+						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = 182591121A8A07CD00A6F99C /* Build configuration list for PBXProject "AppResignerTRGAME" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1825910E1A8A07CD00A6F99C;
+			productRefGroup = 182591181A8A07CD00A6F99C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				182591161A8A07CD00A6F99C /* AppResignerTRGAME */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		182591151A8A07CD00A6F99C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9830C0691AA1ABD50037A392 /* channels_config.plist in Resources */,
+				FD8780151AC95745006A6430 /* CaoCaoZhuan_AdHoc.mobileprovision in Resources */,
+				FD87801E1AC95745006A6430 /* DongWuZhuan_AppStore.mobileprovision in Resources */,
+				FDC3A0F61AEA541100777FE1 /* SongJiangZhuan_AdHoc.mobileprovision in Resources */,
+				FDD26A6D1ADF7CF9005EDD82 /* FengShenYingJieZhuan_AppStore.mobileprovision in Resources */,
+				FD87801D1AC95745006A6430 /* DongWuZhuan_AdHoc.mobileprovision in Resources */,
+				9830C06D1AA1ABFF0037A392 /* games_config.plist in Resources */,
+				182591211A8A07CE00A6F99C /* Images.xcassets in Resources */,
+				F51AAACD1B6F091F00FA0A57 /* SSGSHZFTB_AppStore.mobileprovision in Resources */,
+				9850C5C71AA56C7D0017F31C /* XC_adhoc.mobileprovision in Resources */,
+				F5BD93C61BD620F2006EF251 /* DWBWZ_AdHoc.mobileprovision in Resources */,
+				F5BD93CA1BD62109006EF251 /* HHCCZ_AdHoc.mobileprovision in Resources */,
+				F59D190A1B83087100B0DEBE /* SHZWLP_AdHoc.mobileprovision in Resources */,
+				9830C0651AA19F360037A392 /* unpackipa.sh in Resources */,
+				9830C0741AA3558B0037A392 /* repackipa.sh in Resources */,
+				FDC3A0F71AEA541100777FE1 /* SongJiangZhuan_AppStore.mobileprovision in Resources */,
+				F5BD93CB1BD62109006EF251 /* HHCCZ_AppStore.mobileprovision in Resources */,
+				FD8780211AC95745006A6430 /* YangJiaJiang_AdHoc.mobileprovision in Resources */,
+				FD87801A1AC95745006A6430 /* CaoCaoZhuanWL_AppStore.mobileprovision in Resources */,
+				FD8780191AC95745006A6430 /* CaoCaoZhuanWL_AdHoc.mobileprovision in Resources */,
+				9896F2561ACC03F900255189 /* entitlements_adhoc in Resources */,
+				182591241A8A07CE00A6F99C /* Main.storyboard in Resources */,
+				F5AD9AA71B0DC871006E1EC7 /* HuanXiangBanZhaoYunZhuan_AdHoc.mobileprovision in Resources */,
+				98530D8F1AC4408900DC38BC /* ZhaoYunZhuan_AdHoc.mobileprovision in Resources */,
+				984874C31AA5B45D001C3599 /* archived-expanded-entitlements.xcent in Resources */,
+				9850C5C51AA5686A0017F31C /* entitlements in Resources */,
+				F5BD93C71BD620F2006EF251 /* DWBWZ_AppStore.mobileprovision in Resources */,
+				FD8780221AC95745006A6430 /* YangJiaJiang_AppStore.mobileprovision in Resources */,
+				F5C1D3131B031FCA00AFA2E5 /* ShengSanGuoWeiZhuan_AdHoc.mobileprovision in Resources */,
+				98530D8E1AC4408900DC38BC /* ShengSanGuo_AdHoc.mobileprovision in Resources */,
+				FDD26A6C1ADF7CF9005EDD82 /* FengShenYingJieZhuan_AdHoc.mobileprovision in Resources */,
+				FD8780161AC95745006A6430 /* CaoCaoZhuan_AppStore.mobileprovision in Resources */,
+				F56259C91B20292E00457C8A /* YueFeiZhuan_AdHoc.mobileprovision in Resources */,
+				F5C1D3141B031FCA00AFA2E5 /* ShengSanGuoWeiZhuan_AppStore.mobileprovision in Resources */,
+				F531B71B1BD5DCAF005B801E /* games_config_haima.plist in Resources */,
+				F56259CA1B20292E00457C8A /* YueFeiZhuan_AppStore.mobileprovision in Resources */,
+				F51AAACC1B6F091F00FA0A57 /* SSGSHZFTB_AdHoc.mobileprovision in Resources */,
+				98530D911AC4408900DC38BC /* ZhaoYunZhuan_AppStore.mobileprovision in Resources */,
+				9830C06F1AA1ABFF0037A392 /* XC.mobileprovision in Resources */,
+				F5AD9AA81B0DC871006E1EC7 /* HuanXiangBanZhaoYunZhuan_AppStore.mobileprovision in Resources */,
+				98530D901AC4408900DC38BC /* ShengSanGuo_AppStore.mobileprovision in Resources */,
+				F59D190B1B83087100B0DEBE /* SHZWLP_AppStore.mobileprovision in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182591131A8A07CD00A6F99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9830C0711AA1AE040037A392 /* FileUtlis.swift in Sources */,
+				1825911F1A8A07CE00A6F99C /* ViewController.swift in Sources */,
+				987372B31AA091700015D788 /* ChannelListTableViewCell.swift in Sources */,
+				1861FD011A8AF5C600100AB7 /* TableViewController.swift in Sources */,
+				1825911D1A8A07CE00A6F99C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		182591221A8A07CE00A6F99C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				182591231A8A07CE00A6F99C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		182591311A8A07CE00A6F99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		182591321A8A07CE00A6F99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		182591341A8A07CE00A6F99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AppResignerTRGAME/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bantu.repacktool;
+				PRODUCT_NAME = "IOS打包工具";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		182591351A8A07CE00A6F99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AppResignerTRGAME/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bantu.repacktool;
+				PRODUCT_NAME = "IOS打包工具";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		182591121A8A07CD00A6F99C /* Build configuration list for PBXProject "AppResignerTRGAME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182591311A8A07CE00A6F99C /* Debug */,
+				182591321A8A07CE00A6F99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		182591331A8A07CE00A6F99C /* Build configuration list for PBXNativeTarget "AppResignerTRGAME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182591341A8A07CE00A6F99C /* Debug */,
+				182591351A8A07CE00A6F99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1825910F1A8A07CD00A6F99C /* Project object */;
+}

@@ -1,0 +1,14 @@
+﻿{
+"GameName":"战棋天下",
+"GamePath":"zqtx",
+"EnableTalkingData": true,
+"TalkingDataAppId":"AC86E0C829382B4F71BCF026C39EECB2",
+"TalkingDataChannelId": "Nightly",
+"EncryptResource": false,
+"ShowFrame": false,
+"PackageName":"com.bantu.zqtx",
+"WXAPPID":"wxcf16fa322dab3c5a",
+"WXMCHID":"1379762102",
+"WXSecret":"aa7b3cdcbf79e423b29b673136d04ab4",
+"QQAPPID":"1105185485"
+}

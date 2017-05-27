@@ -1,0 +1,13 @@
+﻿{
+"IS_FUWUQI_TONGBU":0,  
+"BAOMING":"com.bantu.zqtx.win32.noHotUpdate",
+"BANBENHAO":"1.0.2", 
+"PINGTAI":"win32", 
+"IS_YIDAOMIAO":0,
+"IS_MPNULL":0,
+"tongrenyuye":0,
+"SingleSeckill":0,
+"MapElemNum" :25,
+"ProtagonistLv":1,
+"NolimitMove":0
+}
